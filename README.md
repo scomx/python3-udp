@@ -5,7 +5,6 @@ The UDP listener will capture broadcast packets containing weather data sent by 
 
 For convenience, a standalone executable for Windows that does not require Python3 pre-installed is also provided as well as a standalone binary for Raspberry Pi.
 
-## Running atmoudp36.py and atmoudp36.exe
 ## Running atmoudp36.py script
 Make sure a Python3 environment is installed and activated. Open a console window/command prompt and run the script:
 
@@ -13,16 +12,20 @@ python3 atmoudp36.py -p _passkey_
 
 ## Installing and running atmoudp36.bin standalone executable for Raspberry PI
 Open a terminal window, create a dedicated directory for ATMOCOM script and data and enter it:
+
 **pi@raspberrypi:** mkdir atmocom
 **pi@raspberrypi:** cd atmocom
 
 Download the atmoudp36.bin standalone binary file:
+
 **pi@raspberrypi:** wget https://github.com/atmocom/python3-udp/raw/master/atmoudp36.bin
 
 Change permissions of downloaded binary to make it executable:
+
 **pi@raspberrypi:** chmod +x atmoudp36.bin
 
 Run:
+
 **pi@raspberrypi:** ./atmoudp36.bin -p _passkey_
 
 ## Installing and running atmoudp36.exe standalone executable for Windows
