@@ -13,21 +13,21 @@ python3 atmoudp36.py -p _passkey_
 
 
 ## Installing and running atmoudp36.bin standalone executable for Raspberry PI
-Open a terminal window, create a dedicated directory for ATMOCOM script and data and enter it:
+1. Open a terminal window, create a dedicated directory for ATMOCOM script and data and enter it:
 
 **pi@raspberrypi:** mkdir atmocom
 
 **pi@raspberrypi:** cd atmocom
 
-Download the atmoudp36.bin standalone binary file:
+2. Download the atmoudp36.bin standalone binary file:
 
 **pi@raspberrypi:** wget https://github.com/atmocom/python3-udp/raw/master/atmoudp36.bin
 
-Change permissions of downloaded binary to make it executable:
+3. Change permissions of downloaded binary to make it executable:
 
 **pi@raspberrypi:** chmod +x atmoudp36.bin
 
-Run:
+4. Run:
 
 **pi@raspberrypi:** ./atmoudp36.bin -p _passkey_
 
