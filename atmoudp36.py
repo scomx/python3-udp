@@ -8,7 +8,7 @@ but over UDP protocol instead of HTTP.
 
 License GNU-GPL V3, see repo for details.
 
-(c)2018 Astrogenic Systems
+(c)2019 Astrogenic Systems
 '''
 
 import argparse
@@ -204,7 +204,7 @@ def main():
 		USE_METRIC = False
 
 
-	print("* ATMOCOM UDP Weather Data Logger v0.2b *")
+	print("* ATMOCOM UDP Weather Data Logger v0.3b *")
 	print("-Passkey            : " + PASSKEY)
 	print("-Database directory : " + DATAFOLDER)
 	print("-Using metric system: " + str(USE_METRIC))
@@ -212,6 +212,7 @@ def main():
 
 	try:
 		server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+		server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 		server_socket.bind(('', 12000))
 		pWU = WXParser()
 		while True:
@@ -226,5 +227,7 @@ def main():
 
 	except KeyboardInterrupt:
 		print ("Shutting down UDP server")
+	except Exception as e:
+		print (e)
 
 if __name__ == "__main__": main()
