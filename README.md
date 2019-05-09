@@ -45,7 +45,7 @@ Once the program has started, if everything works correctly you will see weather
 
 If you see ACCESS ERROR printed out after the string with captured UDP data that means that your script and ATMOCOM passkeys do not match.
 
-To stop the program press and hold **CTRL+C** (**CTRL+SHIFT+PAUSE** on Windows)until the program terminates.
+To stop the program press and hold **CTRL+C** (**CTRL+SHIFT+PAUSE** on Windows) until the program terminates.
 
 
 ## Additional notes
